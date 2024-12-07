@@ -203,7 +203,7 @@ if __name__ == '__main__':
     parser.add_argument('--data-dir', default='/*/*/fundus/', help='data root path')
     parser.add_argument('--out-stride', type=int, default=16, help='out-stride of deeplabv3+', )
     parser.add_argument("--dataset", type=str, default="fundus")  #
-    parser.add_argument("--algorithm", type=str, default='Unet_nips2023')  #
+    parser.add_argument("--algorithm", type=str, default='WT_PSE')  #
     parser.add_argument("configs", nargs="*")
     parser.add_argument("--label", type=str, default='OD',help='determine the objective of validation for best model choice')  #
     parser.add_argument("--seed", type=int, default=1)  #

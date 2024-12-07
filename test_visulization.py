@@ -65,7 +65,7 @@ def main(target_domain,trial_name,day):
     parser.add_argument('--data-dir', default='/home/ckc/dataset/', help='data root path')
     parser.add_argument('--out-stride', type=int, default=16, help='out-stride of deeplabv3+',)
     parser.add_argument("--dataset", type=str, default="fundus")  # PACS
-    parser.add_argument("--algorithm", type=str, default='Unet_nips2023')  # ICML22_MMD
+    parser.add_argument("--algorithm", type=str, default='WT_PSE')  # ICML22_MMD
     parser.add_argument("configs", nargs="*")
     parser.add_argument("--label", type=str, default='OD')  #
     parser.add_argument("--seed", type=int, default=1)  #

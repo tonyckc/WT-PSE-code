@@ -1131,10 +1131,10 @@ class attention_layer(nn.Module):
 
 
 
-class Unet_nips2023(Algorithm):
+class WT_PSE(Algorithm):
     def __init__(self, n_channels, n_classes, hparams, device, two_step, per_domain_batch=8, source_domain_num=3,
                  feature_dim=8, bilinear=True):
-        super(Unet_nips2023, self).__init__(n_channels, n_classes, hparams, device)
+        super(WT_PSE, self).__init__(n_channels, n_classes, hparams, device)
         self.n_channels = n_channels
         self.device = device
         self.eps = 1e-5
