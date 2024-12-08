@@ -16,12 +16,12 @@ import hparams_registry
 import fundus_dataloader as DL
 import custom_transforms as tr
 from tqdm import tqdm
-from algorithms import Unet_nips2023
+from algorithms import WT_PSE
 
 
 
 # dir to save model
-local_path = '/*/*/founds_training'
+local_path = '/*/*/*/founds_training'
 import shutil
 import glob
 from utils import save_code,seed_initialization
@@ -200,7 +200,7 @@ if __name__ == '__main__':
     parser.add_argument('--lr_oc_shape', type=float, default=5e-4, help='learning rate for OC', )
     parser.add_argument('--lr-decrease-rate', type=float, default=0.2, help='ratio multiplied to initial lr')
     parser.add_argument('--lam', type=float, default=0.9, help='momentum of memory update', )
-    parser.add_argument('--data-dir', default='/*/*/fundus/', help='data root path')
+    parser.add_argument('--data-dir', default='/*/*/dataset/', help='data root path')
     parser.add_argument('--out-stride', type=int, default=16, help='out-stride of deeplabv3+', )
     parser.add_argument("--dataset", type=str, default="fundus")  #
     parser.add_argument("--algorithm", type=str, default='WT_PSE')  #

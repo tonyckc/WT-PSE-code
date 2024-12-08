@@ -68,7 +68,7 @@ def _hparams(algorithm, dataset, random_state):
         hparams["mlp_depth"] = (3, int(random_state.choice([3, 4, 5])))
         hparams["mlp_dropout"] = (0.0, random_state.choice([0.0, 0.1, 0.5]))
 
-    elif algorithm == 'Unet_nips2023':
+    elif algorithm == 'WT_PSE':
 
 
         

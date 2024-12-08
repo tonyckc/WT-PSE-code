@@ -29,7 +29,7 @@ import cv2
 from utils import *
 from metrics import *
 import scipy.io as sci
-from algorithms import Unet_nips2023
+from algorithms import WT_PSE
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '3'
 Target = 3
