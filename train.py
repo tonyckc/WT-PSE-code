@@ -172,7 +172,7 @@ def main(args,left_argv,trial_name,day):
             result[key].append(best_value_list[index])
             index += 1
     for key in result.keys():
-        print('Domain:{}'.format(target_domain),'{}:{}+_{}'.format(key,np.mean(result[key]),np.std(result[key],ddof=1)))
+        print('Domain:{}'.format(args.datasetTest[0]),'{}:{}+_{}'.format(key,np.mean(result[key]),np.std(result[key],ddof=1)))
 
 if __name__ == '__main__':
     # target domain: 1 - 4
