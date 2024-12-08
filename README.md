@@ -21,5 +21,5 @@ please see the requirement file
 1. set the you wanted model dir in test_visulization.py 
 2. run test_visualization.py
 
-## Demo: Fast testing a target domain using the provided .ckpt model
+## Demo: Fast testing on a target domain using the provided .ckpt model
 We offered a .ckpt file at https://drive.google.com/file/d/1-ntNwztBANmKnkf6VBZqEWGPqYL5sWg-/view?usp=sharing (OD - Target domain=4 - ASD=0.831 - Dice=0.936 ). You can use this model to get a fast testing process on the OD #4 target domain using test_visualization.py  
