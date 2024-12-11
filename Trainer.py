@@ -1036,8 +1036,8 @@ class Trainer(object):
             if self.stop_epoch == self.epoch:
                 print('Stop epoch at %d' % self.stop_epoch)
                 break
-            # lr update
-            self.lr_update(epoch,warmup_steps,warmup_factor,base_lr_od,base_lr_oc,gamma,Steps)
+            # lr update; You can choose if the lr is updated with the training. Sometimes, better performance will be achieved using lr update.
+            #self.lr_update(epoch,warmup_steps,warmup_factor,base_lr_od,base_lr_oc,gamma,Steps)
 
 
 
