@@ -19,7 +19,7 @@ please see the requirement file
      - "datasetTrain" - source domains, such as [1,2,4]
      - "datasetTest" - target domain, such as [3]
      - "data-dir" - where your dataset as step 1
-     - "label" - determine the objective ( OC or OD ?)of validation for best model choice.
+     - "label" - determine the objective ( OC or OD ?) of validation for best model choice.
 4. run train.py and you will get the saved model
 ## Visualization using saved model
 1. set the you wanted model dir in test_visulization.py 
